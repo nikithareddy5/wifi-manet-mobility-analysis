@@ -1,158 +1,77 @@
-# Effect-of-Mobility-on-Network-Performance-in-Wi-Fi-and-MANET
+#  Mobility Impact on WiFi and MANET Networks
 
-## Project Overview
+##  Overview
 
-This project analyzes the performance of a **Mobile Ad Hoc Network (MANET)** under different node mobility speeds.
-The simulation evaluates how increasing node speed impacts key network performance metrics such as:
+This project analyzes how node mobility affects network performance in **WiFi** and **Mobile Ad Hoc Networks (MANETs)**.
 
-* **Throughput**
-* **Packet Delivery Ratio (PDR)**
-* **End-to-End Delay**
-
-The goal of this study is to understand how mobility affects network reliability and efficiency in dynamic wireless environments.
+The study evaluates key performance metrics such as throughput, delay, and packet loss under varying mobility conditions using network simulation.
 
 ---
 
-## Technologies Used
+##  Objectives
 
-* **NS-3 Network Simulator**
-* **C++** for simulation implementation
-* **Python (Matplotlib)** for visualization
-* **Data Analysis & Plotting**
+* Analyze the impact of node mobility on network stability
+* Compare performance between WiFi and MANET
+* Evaluate key metrics:
 
----
-
-## Project Structure
-
-```
-MANET-Performance-Analysis
-│
-├── manet_project.cc        # NS-3 simulation code
-├── plots_manet.py          # Python script to generate graphs
-├── results/
-│   ├── throughput_plot.png
-│   ├── pdr_plot.png
-│   ├── delay_plot.png
-│
-└── README.md
-```
+  * Throughput
+  * End-to-end delay
+  * Packet loss
 
 ---
 
-## Simulation Description
+##  Technologies Used
 
-The network simulation evaluates MANET performance by varying **node speed from 1 m/s to 25 m/s**.
+* NS2 / NS3 (or your simulator — tell me which one)
+* C++ / Python
+* Networking protocols (TCP/UDP)
 
-For each speed, the following metrics are recorded:
+---
 
-| Metric                          | Description                                               |
-| ------------------------------- | --------------------------------------------------------- |
-| **Throughput**                  | Amount of data successfully transmitted per second (kbps) |
-| **Packet Delivery Ratio (PDR)** | Percentage of packets successfully received               |
-| **End-to-End Delay**            | Average time taken for packets to reach the destination   |
+## Methodology
+
+* Simulated network environments with varying node mobility
+* Configured scenarios for WiFi and MANET
+* Collected performance metrics under different conditions
+* Compared results across scenarios
 
 ---
 
 ## Results
 
-### Throughput vs Node Speed
+* Increased mobility leads to higher packet loss
+* MANET adapts better to dynamic environments
+* WiFi performance decreases with instability
 
-Higher throughput indicates efficient data transmission.
-
-* Throughput remains **high at lower speeds**
-* Drops significantly at **higher mobility levels**
-
----
-
-### Packet Delivery Ratio (PDR)
-
-PDR measures network reliability.
-
-* **~98% PDR at low speeds**
-* Drops as node mobility increases
-* High mobility leads to **frequent route breakages**
+(*Add graphs/screenshots in results folder*)
 
 ---
 
-### End-to-End Delay
+##  Project Structure
 
-Average packet delivery delay increases with mobility.
-
-* Low delay at **stable node speeds**
-* Higher delays when **network topology changes rapidly**
-
----
-
-## Performance Observations
-
-Key insights from the simulation:
-
-* **Low mobility improves network stability**
-* **High node speed decreases packet delivery**
-* **Network delay increases with mobility**
-* MANET routing protocols must handle **frequent topology changes**
+* `src/` → simulation scripts
+* `results/` → graphs and outputs
+* `report/` → detailed analysis
 
 ---
 
-## Visualization
+## How to Run
 
-The project includes Python-generated plots for:
-
-* Speed vs Throughput
-* Speed vs Packet Delivery Ratio
-* Speed vs Average End-to-End Delay
-
-These visualizations help identify how **mobility impacts network performance**.
+1. Install NS2/NS3
+2. Run simulation scripts
+3. Analyze output data
 
 ---
 
-## How to Run the Project
+##  Concepts Covered
 
-### 1. Run the NS-3 Simulation
-
-Compile and run the simulation file:
-
-```
-./waf --run manet_project
-```
+* Wireless Networks
+* MANET
+* Network Simulation
+* Performance Analysis
 
 ---
 
-### 2. Generate Graphs
+##  Author
 
-Run the Python visualization script:
-
-```
-python3 plots_manet.py
-```
-
-This will generate performance graphs for the simulation results.
-
----
-
-## Applications
-
-Understanding MANET performance is useful for:
-
-* Emergency communication systems
-* Military communication networks
-* Disaster recovery networks
-* Vehicular ad hoc networks (VANETs)
-
----
-
-## Future Improvements
-
-Possible extensions to this project:
-
-* Compare multiple routing protocols (AODV, DSR, OLSR)
-* Simulate larger network sizes
-* Evaluate packet loss and jitter
-* Introduce realistic mobility models
-
----
-
-
-**Nikita Baddam**
-
-
+Nikitha Baddam
