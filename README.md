@@ -43,7 +43,29 @@ The study evaluates key performance metrics such as throughput, delay, and packe
 * MANET adapts better to dynamic environments
 * WiFi performance decreases with instability
 
-(*Add graphs/screenshots in results folder*)
+
+###  Performance Graphs
+
+![Throughput](results/results_1.jpg)
+
+![Delay](results/results_2.jpg)
+
+![Packet Loss](results/results_3.jpg)
+
+---
+
+### 📋 Summary Table
+
+![Results Table](results/results_table.jpg)
+
+---
+
+## 💡 Key Insights
+
+* Network performance decreases as mobility increases
+* MANET performs better in dynamic environments
+* Packet loss increases at higher speeds
+
 
 ---
 
@@ -71,6 +93,7 @@ The study evaluates key performance metrics such as throughput, delay, and packe
 * Performance Analysis
 
 ---
+
 
 ##  Author
 
